@@ -1,0 +1,297 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    color: white;
+}
+.navbar-content{
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#0089b7e7 ;
+}
+.webname-text{
+    font-weight: 900;
+    font-size: 40px;
+    color: rgb(239, 239, 239);
+    margin: 0;
+}
+.nav-bar-locator{
+    display: flex;
+    gap: 1rem;
+}
+.nav-bar-locator a{
+    text-decoration: none;
+    color: rgb(239, 239, 239);
+    font-size:25px ;
+}
+.nav-bar-locator a:hover{
+    text-decoration: underline;
+    color: rgb(224, 224, 224);
+}
+@media screen and (max-width:425px) {
+    .nav-bar-locator a{
+        font-size: 18px;
+    }
+    .webname-text{
+        font-size: 27px;
+    }
+    
+}
+.hero-section{
+    background-color: #003d62;
+    border-bottom: 10px solid #4ba0d5;
+}
+.hero-content{
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content:space-between;
+   
+}
+
+.image-hero{
+    display: flex;
+    align-items:start;
+    justify-content: start;
+    /* background-image: linear-gradient(to top, #330867 0%, #30cfd0 100%);  */
+    background-image: url(https://img.freepik.com/premium-photo/photo-background-portrait-blue-color-paint-texture_41969-37494.jpg);
+    border-top-left-radius:50rem;
+    border-top-right-radius:50rem;
+    border-bottom-left-radius:50rem ;
+    border-bottom-right-radius:50rem ;
+    width: 25rem;
+    height:40rem ;
+    
+}
+.hero-img{
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius:50rem ;
+    border-bottom-right-radius:50rem;
+    
+}
+.text-upper{
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    margin: 0;
+}
+.hi{
+    font-size: 80px;
+    color:#fdff9e ;
+    margin: 0;
+}
+.name{
+    font-size: 60px;
+    color: white;
+    margin: 0;
+}
+.i{
+    font-size: 50px;
+    color: white;
+}
+.op{
+    color: white;
+    margin: 0;
+    font-size: 45px;
+    overflow: hidden;
+    border-right: 2px solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+   animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+ 
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}    
+@keyframes blink-caret {
+    from,
+    to{
+        border-color: transparent;
+    }
+    50%{
+        border-color: orange;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .image-hero{
+        width: 18rem;
+        height:30rem ;
+    }
+    .hi{
+        font-size: 50px;
+    }
+    .name{
+        font-size: 40px;
+    }
+    .i{
+        font-size: 40px;
+    }
+    .op{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width:425px){
+    .hero-content{
+        flex-direction:column ;
+    }
+    .image-hero{
+        height:25rem ;
+    }
+} 
+.project-section{
+    background-color: #003251;
+}
+.project-content{
+    max-width: 1200px;
+    margin:  auto;
+    padding: 2rem;
+    text-align: center;
+}
+.project-content h1{
+    font-size: 5rem;
+}
+.card{
+    border-radius: 12px;
+    overflow: hidden;
+    transition-property: scale;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
+    
+}
+.card:hover{
+    scale: 1.1;
+}
+.card:hover img{
+    scale: 1.1;
+    transition-property: scale;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in;
+    opacity: 0.8;
+}
+.project-about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    place-items:center ;
+    gap: 2rem;
+}
+.project-about a{
+    text-decoration: none;
+}
+.card{
+    width: 320px;
+}
+.project-img{
+    width: 100%;
+    height: 350px;
+}
+.text-project{
+    position: relative;
+    top: -6.5rem;
+    margin-bottom: -6.5rem;
+    font-size: 25px;
+    transform: translateY(100px);
+    padding: 0.3em;
+}
+.text-project h3{
+    text-align: center;
+}
+.card:hover .text-project{
+    background-color: white;
+    color: #003d62;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    
+}
+.card:hover .text-project{
+    transform: translateY(10px);
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+@media  screen and (max-width:425px) {
+    .card:hover{
+       scale: 1;
+    }
+    .card:hover img{
+        scale: 1;
+    }
+    .text-project{
+        transform: translateY(0px);
+        background-color: white;
+        color: #003d62;
+        padding: 2px;
+        font-size: 20px;
+    }
+}
+.contact-content{
+    padding: 4rem;
+    background-color:#003d62 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.let{
+    font-size: 80px;
+}
+.social-profle{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+.socialpro h2{ 
+    font-size: 40px;
+}
+.socialpro{
+    display: flex;
+    align-items: center;
+    
+}
+.pro-img{
+    width: 4rem;
+}
+@media screen and (max-width:425px) {
+    .contact-content{
+        padding: 2rem;
+    }
+    .let{
+        font-size: 35px;
+    }
+    .socialpro h2{ 
+        font-size: 25px;
+    }
+    .pro-img{
+        width: 2rem;
+    }
+}
+.footer-content{
+    background-color:#012941 ;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 1.5rem;
+}
+@media screen and (max-width:425px) {
+    .footer-content{
+        font-size: 25px;
+    }
+    
+}
