@@ -1,0 +1,112 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns:1fr 9fr;
+    gap: 2rem;
+    position: relative;
+    background-color: #FAFAFA;
+}
+p{
+    font-weight: 500;
+}
+.side-bar-content{
+    background-color: #232946;
+    color: #fafafad2;
+    position: fixed;
+    left: 0;
+    max-width:16rem ;
+    height: 100%;
+    border: 1px solid black;
+}
+.side-bar-content h1{
+   
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+.topic-name{
+   border-top: 1px solid black; 
+   padding-left:1rem ;
+}
+#var{
+    border-bottom:1px solid black ;
+}
+.right-side-section{
+    background-color: rgba(187, 204, 255, 0.23);
+}
+a{
+    text-decoration: none;
+    color: #fafafacd;
+}
+.right-side-content{
+   
+    max-width: 70%;
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+    position: absolute;
+    left:18rem;
+}
+.intro-content,
+.know-content,
+.java-content,
+.hello-content,
+.variable-content{
+    display: grid;
+}
+.intro-content p,
+.know-content p,
+.java-content p,
+.hello-content p,
+.variable-content p{
+    color: #030303 ;
+}
+.intro h1,
+.know h1,
+.Java h1,
+.hello-world h1,
+.variable h1{
+    color: #0066CC;
+}
+.intro ul li,
+.know ul li
+{
+    color:#656565;
+}
+.know-content ul,.intro-content ul{
+    display: grid;
+    gap: 0.8rem;
+}
+.code{
+    background-color: rgba(128, 128, 128, 0.365);
+    padding: 1rem;
+}
+@media screen and (max-width:1024px) {
+    .side-bar-content{
+        max-width:14rem ;
+    }
+    .side-bar-content h1{
+        font-size: 25px;
+    }
+    .right-side-content{
+        left: 15rem;
+    }
+}
+@media screen and (max-width:768px) {
+
+    body{
+        grid-template-columns: 1fr;
+    }
+    .side-bar-navigation{
+        display: none;
+    }
+    .right-side-content{
+       max-width: 100%;
+       left: 0;
+        
+    }
+}
