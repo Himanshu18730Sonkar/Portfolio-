@@ -223,6 +223,20 @@ body{
     transition-duration: 0.5s;
     transition-timing-function: ease-in;
 }
+#p7{
+    grid-column: 1 / span 3;
+    justify-self: center; 
+    
+}
+@media  screen and (max-width:1024px) {
+    #p7{
+      grid-column: 1 /span 2;
+      justify-self: center; 
+    
+    }
+    
+}
+
 @media  screen and (max-width:425px) {
     .card:hover{
        scale: 1;
@@ -236,6 +250,11 @@ body{
         color: #003d62;
         padding: 2px;
         font-size: 20px;
+    }
+    #p7{
+        grid-column: 1 ;
+        justify-self: center; 
+    
     }
 }
 .contact-content{
@@ -294,4 +313,5 @@ body{
         font-size: 25px;
     }
     
+
 }
